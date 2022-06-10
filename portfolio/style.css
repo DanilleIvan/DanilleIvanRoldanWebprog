@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* nav bar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+    box-shadow: 0 0 10px white;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 820px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('Pic.1.JPG') no-repeat center center/cover;
+    height: 1500px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+    left: 60%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px 0px;
+}
+.btn{
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow:  0 0 5px white,0 0 10px white 0 0 5px white ;
+    font-size: bold;
+}
+/*about section--*/
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 600px;
+    height: 550px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+   
+}
+#Skills{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+
+}
+#intro h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+#Personal{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    
+
+}
+#intro h4{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/*portfotio section*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 500px;
+    height: 450px;
+
+}
+/*Files section*/
+#Files{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white; 
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: rgba(23, 32, 42);
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(171,235,198)50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px green;
+}
+.box img{
+    width: 100px;
+    height: 100px;
+}
+#contact{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(23, 32, 42);
+    color: white;
+    padding: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 10px;
+    margin: 10px;
+    width: 120%;
+
+}
+#msg{
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    
+}
+#send{
+    padding: 10px;
+    width: 60px;
+    border: none;
+    outline: none;
+
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
